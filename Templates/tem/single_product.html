@@ -1,0 +1,2605 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Yoga Studio Template">
+    <meta name="keywords" content="Yoga, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Agthia</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+
+
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% static 'sta/css/bootstrap.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'sta/css/font-awesome.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'sta/css/nice-select.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'sta/css/slicknav.min.css' %}" type="text/css">
+    <link rel="stylesheet" href="{% static 'sta/css/single_product.css' %}" type="text/css">
+
+    <style>
+
+
+
+
+                .top-recipe.spad > div:first-child > .image-row.image-row-burger {
+      padding-top:100px;margin-top:10px;padding-bottom:100px;
+              margin-left:180px;margin-right:180px;
+        }
+
+
+
+
+
+
+         .topnav {
+            font-family:josefin sans;
+
+        }
+
+
+        .pt-recipe-udiv h3 {
+            font-family:times new roman;
+        }
+
+
+        .pt-recipe-udiv h6 {
+            font-family:josefin sans;
+        }
+
+
+        .about_sect_four h3 {
+            font-family:cormorant garamond;
+        }
+
+        .about_sect_four p {
+            font-family:josefin sans;
+            line-height:20px;
+        }
+
+
+        .pt-recipe-udiv button {
+        border:2px solid #d7b27b;
+        font-family:josefin sans;
+        padding:10px;
+        width:200px;
+        }
+
+
+
+         .top-recipe-button {
+            font-size:15px;
+            border:2px solid #d7b27b;
+            padding:10px;
+            width:220px;
+            background:transparent;
+            font-family:josefin sans;
+        }
+
+
+        .top_rec_spad_hr {
+            margin-bottom:5px;
+        }
+
+
+         .top-recipe.spad > div:first-child  h6 {
+            font-family:josefin sans;
+        }
+
+          .top-recipe.spad > div:first-child  h4 {
+            font-family:cormorant;
+        }
+
+
+          .top-recipe.spad > div:first-child  p {
+            font-family:josefin sans;
+        }
+
+
+
+
+
+        .footer-section .fs-left p {
+            font-family:josefin sans;
+          }
+
+
+        .footer-section .fs-left {
+            font-family:josefin sans;
+          }
+
+
+
+
+        .footer-section .subscribe-form p {
+            font-family:josefin sans;
+        }
+
+
+        .footer-section .subscribe-form input[type="email"] {
+            border-color: #46484e;
+            font-family:josefin sans;
+        }
+
+        .footer-section .subscribe-form button {
+
+            font-family:josefin sans;
+
+        }
+
+
+
+    .footer-section .fs-left hr {
+        width:65px;
+        border: none;
+        height: 2px;
+        color: #4c443a3;
+        background-color: #4c443a;
+    }
+
+
+    .footer-section .fs-left span {
+        font-size:12px;
+        font-family:josefin sans;
+        letter-spacing:1px;
+    }
+
+
+     .footer-section .footer_mail p {
+        color:#d7b27b;
+        font-family:josefin sans;
+
+    }
+
+
+    .copyr_hr {
+        width:100%;
+        margin-left:0px;
+        margin-right:0px;
+        background-color: #46484e;
+    }
+
+
+    .copyr_foo {
+        background-color:#1f232c;
+    }
+
+    .copyright-text {
+         margin-bottom:40px;
+         margin-top:10px;
+         color:white;
+         font-size:15px;
+    }
+
+
+
+
+
+
+
+
+   .hr-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 68%;
+    margin-top:40px;
+    margin-right:15px;
+}
+
+.custom-hr {
+    flex-grow: 1;
+    border: 0;
+    border-top: 1px dashed #c4c4c4;
+}
+
+.round-button {
+    width: 7px; /* Reduced size */
+    height: 7px; /* Reduced size */
+    border-radius: 50%; /* Ensures the button is round */
+    border: none;
+    background-color: #c4c4c4; /* Red background color for buttons */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 10px; /* Adjust font size as needed */
+    line-height: 20px; /* Ensures text is vertically centered */
+    padding: 0; /* Remove default padding */
+}
+
+
+
+ .burger_h4 {
+        margin-left:40vh;
+        }
+
+  .burger_p {
+        width:143vh;
+        margin-left:15vh;
+        margin-right:8vh;
+        margin-bottom:10vh;
+    }
+
+
+
+/*
+
+.overlay-button {
+    position: absolute;
+    top: 52%; /* Adjust button position vertically */
+    left: 16%; /* Adjust button position horizontally */
+    transform: translate(-50%, -50%); /* Center the button */
+    padding: 10px 20px; /* Adjust button padding */
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust button background color and opacity */
+    border: none; /* Remove button border */
+    border-radius: 5px; /* Adjust button border radius */
+    cursor: pointer;
+    color: #333; /* Adjust button text color */
+    font-size: 16px; /* Adjust button text size */
+    margin-left:240px;
+}
+
+
+.text-content {
+    position: absolute;
+    top: 30%; /* Adjust text content position vertically */
+    left: 23%; /* Center text content horizontally */
+    transform: translateX(-50%); /* Center text content */
+    color: #fff; /* Adjust text content color */
+    font-size: 15px; /* Adjust text content size */
+}
+
+
+ .text-content1 {
+    position: absolute;
+    top: 15%; /* Adjust text content position vertically */
+    left: 20%; /* Center text content horizontally */
+    transform: translateX(-50%); /* Center text content */
+    color: #fff; /* Adjust text content color */
+    font-size: 20px; /* Adjust text content size */
+}
+
+*/
+
+
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+.todays span {
+    margin-right:328px;
+}
+
+.todays_anchor {
+    margin-left:328px;
+}
+
+
+
+
+.burger_h4 {
+    margin-left:200px;
+}
+
+.burger_p {
+    margin-left:200px;
+    margin-right:220px;
+}
+
+
+
+.image-row.image-row-burger img {
+    width:280px;
+    height:280px;
+}
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #292D36;
+  overflow: hidden;
+  width:590px;
+  margin-left:460px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+/* Add an active class to highlight the current page */
+.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.sect_contact {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    margin-top:30px;
+}
+
+
+.sect_mail {
+    margin-top: 100px;
+}
+
+.sect_mail h6 {
+    text-decoration: underline overline;
+    color:black;
+}
+
+
+.sect_mail input[type='text'] {
+    width:245px;
+    margin-top:10px;
+}
+
+#w3review {
+    margin-top:10px;
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+
+    html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+      .topnav {
+        margin-left:-5px;
+        margin-right:-5px;
+        width:auto;
+        background-color:#292D36;
+      }
+
+
+      .margin-top-500 {
+        margin-top: 222px;
+    }
+
+
+
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+
+}
+
+
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+
+  .topnav.responsive {
+  position: relative;
+  background-color:#292D36;
+  }
+
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 768px) {
+
+        .pt-recipe-udiv {
+        margin-left:500px;
+        }
+
+        .todays span {
+        margin-right:10vh;
+        }
+
+        .todays_anchor {
+        margin-left:10vh;
+        }
+
+
+        .burger_h4 {
+        margin-left:8vh;
+        }
+
+        .burger_p {
+            margin-left:8vh;
+            margin-right:8vh;
+            margin-bottom:-7vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+        }
+
+
+
+
+
+            .row1 button {
+            width:50vh;
+        }
+
+
+        .row1 {
+        margin-left: 110px;
+        }
+
+
+      .footer-section .footer_mail p {
+        margin-left:100px;
+        text-align:left;
+        color:white;
+    }
+
+
+
+    .footer-section .subscribe-form p {
+       margin-right:17vh;
+    }
+
+     .footer-section .footer_mail p {
+        color:#777060;
+    }
+
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 360px) and (max-height: 740px) {
+
+      .pt-recipe-udiv {
+        margin-left:40vh;
+        margin-right:10vh;
+        width:40vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child  p {
+            width:30vh;
+        }
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+            width: 45vh;
+            margin:0vh;
+        }
+
+
+        .top-recipe-button {
+            margin-top:10vh;
+        }
+
+
+         .todays span {
+        margin-right:4vh;
+        }
+
+        .todays_anchor {
+        margin-left:4vh;
+        }
+
+        .burger_h4 {
+           margin-left:9vh;
+          margin-right:8vh;
+          margin-bottom:-3vh;
+        }
+
+        .burger_p {
+          margin-left:8vh;
+          margin-right:8vh;
+          margin-bottom:-3vh;
+        }
+
+        .img_1 {
+        margin-bottom:-17vh;
+        }
+
+
+
+
+         .row1 {
+            margin-left: 5vh;
+        }
+
+        .row1 button {
+            width: 41vh;
+        }
+
+
+         .footer-section .subscribe-form p {
+             margin-right:5vh;
+         }
+
+
+         .footer-section .footer_mail p {
+                color:#777060;
+            }
+
+}
+
+
+
+@media screen and (max-width: 375px) and (max-height: 667px) {
+
+
+     .pt-recipe-udiv {
+        margin-left:50vh;
+        margin-right:10vh;
+        width:50vh;
+    }
+
+
+
+     .todays span {
+        margin-right:6vh;
+        }
+
+        .todays_anchor {
+        margin-left:6vh;
+        }
+
+
+        .burger_h4 {
+        margin-left:6vh;
+        }
+
+        .burger_p {
+            margin-left:8vh;
+            margin-right:8vh;
+            margin-bottom:-3vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+        }
+
+
+
+
+    .top-recipe.spad > div:first-child  p {
+        width:30vh;
+    }
+
+    .top-recipe.spad > div:first-child > .image-row {
+        width: 50vh;
+        margin:0vh;
+    }
+
+
+    .top-recipe-button {
+        margin-top:10vh;
+    }
+
+
+    .row1 {
+        margin-left: 5vh;
+    }
+
+    .row1 p {
+        margin-left: 7vh;
+    }
+
+    .row1 button {
+        width: 45vh;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 391px) and (max-width: 414px) and (min-height: 845px) and (max-height: 896px) {
+
+
+
+      .pt-recipe-udiv {
+        margin-left:40vh;
+        margin-right:10vh;
+        width:35vh;
+    }
+
+
+
+     .todays span {
+        margin-right:6vh;
+        }
+
+        .todays_anchor {
+        margin-left:6vh;
+        }
+
+
+        .burger_h4 {
+        margin-left:6vh;
+        }
+
+        .burger_p {
+            margin-left:8vh;
+            margin-right:8vh;
+            margin-bottom:-3vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:30vh;
+            height:30vh;
+        }
+
+
+
+
+    .top-recipe.spad > div:first-child  p {
+        width:30vh;
+    }
+
+    .top-recipe.spad > div:first-child > .image-row {
+        width: 45vh;
+        margin:0vh;
+    }
+
+
+    .top-recipe-button {
+        margin-top:10vh;
+    }
+
+
+    .row1 {
+        margin-left: 5vh;
+    }
+
+    .row1 p {
+        margin-left: 7vh;
+    }
+
+    .row1 button {
+        width: 34vh;
+    }
+
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 376px) and (max-width: 390px) and (min-height: 668px) and (max-height: 844px) {
+
+
+      .pt-recipe-udiv {
+        margin-left:40vh;
+        margin-right:10vh;
+        width:35vh;
+    }
+
+
+
+    .top-recipe.spad > div:first-child  p {
+        width:30vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+        width: 50vh;
+        margin:0vh;
+    }
+
+
+      .top-recipe.spad > div:first-child > .image-row > .img_1 {
+            width: 40vh;
+            height:40vh;
+            margin-left:-4vh;
+       }
+
+
+      .todays span {
+        margin-right:6vh;
+      }
+
+      .todays_anchor {
+        margin-left:6vh;
+       }
+
+
+
+      .burger_h4 {
+        margin-left:6vh;
+        }
+
+      .burger_p {
+            margin-left:7vh;
+            margin-right:8vh;
+            margin-bottom:-3vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:30vh;
+            height:30vh;
+            margin-left:-2vh;
+        }
+
+
+      .row1 {
+        margin-left: 9vh;
+        }
+
+
+        .row1 p {
+        margin-left: 5vh;
+        }
+
+       .footer-section .subscribe-form input[type="email"] {
+        margin-left: -4vh;
+        }
+
+      .row1 button {
+            width: 35vh;
+            margin-left: -4vh;
+        }
+
+
+
+}
+
+
+
+@media screen and (min-width: 415px) and (max-width: 430px) and (min-height: 897px) and (max-height: 932px) {
+
+
+     .pt-recipe-udiv {
+        margin-left:40vh;
+        margin-right:10vh;
+        width:40vh;
+    }
+
+
+
+    .top-recipe.spad > div:first-child  p {
+        width:30vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+        width: 50vh;
+        margin:0vh;
+    }
+
+
+      .top-recipe.spad > div:first-child > .image-row > .img_1 {
+            width: 40vh;
+            height:40vh;
+            margin-left:-4vh;
+       }
+
+
+      .todays span {
+        margin-right:6vh;
+      }
+
+      .todays_anchor {
+        margin-left:6vh;
+       }
+
+
+
+      .burger_h4 {
+        margin-left:6vh;
+        }
+
+      .burger_p {
+            margin-left:7vh;
+            margin-right:8vh;
+            margin-bottom:-3vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:30vh;
+            height:30vh;
+            margin-left:-2vh;
+        }
+
+
+      .row1 {
+        margin-left: 9vh;
+        }
+
+
+        .row1 p {
+        margin-left: 5vh;
+        }
+
+       .footer-section .subscribe-form input[type="email"] {
+        margin-left: -4vh;
+        }
+
+      .row1 button {
+            width: 33vh;
+            margin-left: -4vh;
+        }
+
+
+}
+
+
+
+
+@media screen and (min-width: 391px) and (max-width: 412px) and (min-height: 897px) and (max-height: 915px) {
+
+
+         .pt-recipe-udiv {
+        margin-left:40vh;
+        margin-right:10vh;
+        width:40vh;
+    }
+
+
+
+    .top-recipe.spad > div:first-child  p {
+        width:30vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+        width: 50vh;
+        margin:0vh;
+    }
+
+
+      .top-recipe.spad > div:first-child > .image-row > .img_1 {
+            width: 40vh;
+            height:40vh;
+            margin-left:-5vh;
+            margin-bottom:-10vh;
+       }
+
+
+       .top-recipe.spad > div:first-child > .image-row > .img_2 {
+       margin-bottom:2vh;
+       }
+
+
+      .todays span {
+        margin-right:6vh;
+      }
+
+      .todays_anchor {
+        margin-left:6vh;
+       }
+
+
+
+      .burger_h4 {
+        margin-left:6vh;
+        }
+
+      .burger_p {
+            margin-left:7vh;
+            margin-right:8vh;
+            margin-bottom:-3vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:30vh;
+            height:30vh;
+            margin-left:-4vh;
+        }
+
+
+      .row1 {
+        margin-left: 9vh;
+        }
+
+
+        .row1 p {
+        margin-left: 5vh;
+        }
+
+       .footer-section .subscribe-form input[type="email"] {
+        margin-left: -4vh;
+        }
+
+      .row1 button {
+            width: 33vh;
+            margin-left: -4vh;
+        }
+
+
+}
+
+
+@media screen and (min-width: 430px) and (max-width: 768px) and (min-height: 932px) and (max-height: 1024px) {
+
+
+
+       html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+
+      .header-nav {
+        height:7vh;
+    }
+
+     .page-top-recipe {
+        margin-top:-1vh;
+    }
+
+    .topnav {
+        margin-left:15vh;
+    }
+
+    .pt-recipe-udiv {
+        margin-left:40vh;
+    }
+
+
+
+    .top-recipe.spad > div:first-child  p {
+        width:60vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+        width: 65vh;
+        margin:0vh;
+    }
+
+
+      .top-recipe.spad > div:first-child > .image-row > .img_1 {
+            width: 65vh;
+            height:65vh;
+            margin-left:0vh;
+            margin-bottom:-10vh;
+       }
+
+
+       .top-recipe.spad > div:first-child > .image-row > .img_2 {
+       margin-bottom:6vh;
+       }
+
+
+      .todays span {
+        margin-right:20vh;
+      }
+
+      .todays_anchor {
+        margin-left:20vh;
+       }
+
+
+
+      .burger_h4 {
+        margin-left:6vh;
+        }
+
+      .burger_p {
+            margin-left:6vh;
+            margin-right:8vh;
+            margin-bottom:-3vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:30vh;
+            height:30vh;
+            margin-left:-4vh;
+        }
+
+
+      .row1 {
+        margin-left: 9vh;
+        }
+
+
+        .row1 p {
+        margin-left: 5vh;
+        }
+
+       .footer-section .subscribe-form input[type="email"] {
+        margin-left: -4vh;
+        }
+
+      .row1 button {
+            width: 33vh;
+            margin-left: -4vh;
+        }
+
+
+}
+
+
+
+@media screen and (min-width: 768px) and (max-width: 820px) and (min-height: 1024px) and (max-height: 1180px) {
+
+
+           html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+
+      .header-nav {
+        height:7vh;
+    }
+
+     .page-top-recipe {
+        margin-top:-1vh;
+    }
+
+    .topnav {
+        margin-left:15vh;
+    }
+
+    .pt-recipe-udiv {
+        margin-left:40vh;
+    }
+
+
+
+    .top-recipe.spad > div:first-child  p {
+        width:60vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+        width: 65vh;
+        margin:0vh;
+    }
+
+
+      .top-recipe.spad > div:first-child > .image-row > .img_1 {
+            width: 65vh;
+            height:65vh;
+            margin-left:0vh;
+            margin-bottom:-10vh;
+       }
+
+
+       .top-recipe.spad > div:first-child > .image-row > .img_2 {
+       margin-bottom:6vh;
+       }
+
+
+      .todays span {
+        margin-right:20vh;
+      }
+
+      .todays_anchor {
+        margin-left:20vh;
+       }
+
+
+
+      .burger_h4 {
+        margin-left:5vh;
+        }
+
+      .burger_p {
+            margin-left:5vh;
+            margin-right:8vh;
+            margin-bottom:-3vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:30vh;
+            height:30vh;
+            margin-left:-1vh;
+        }
+
+
+      .row1 {
+        margin-left: 9vh;
+        }
+
+
+        .row1 p {
+        margin-left: 0vh;
+        }
+
+       .footer-section .subscribe-form input[type="email"] {
+        margin-left: -4vh;
+         width: 43vh;
+         margin:1vh;
+        }
+
+      .row1 button {
+            width: 43vh;
+            margin-left: -4vh;
+            margin:1vh;
+        }
+
+
+
+        .footer-section .fs-left {
+        margin-left:8vh;
+    }
+
+
+      .footer-section .footer_mail {
+        margin-left:10vh;
+        text-align:right;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 820px) and (max-width: 1024px) and (min-height: 1180px) and (max-height: 1366px) {
+
+
+           html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+
+      .header-nav {
+        height:7vh;
+    }
+
+     .page-top-recipe {
+        margin-top:-1vh;
+    }
+
+    .topnav {
+        margin-left:20vh;
+    }
+
+    .pt-recipe-udiv {
+        margin-left:40vh;
+    }
+
+
+
+    .top-recipe.spad > div:first-child  p {
+        width:60vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+        width: 65vh;
+        margin:0vh;
+    }
+
+
+      .top-recipe.spad > div:first-child > .image-row > .img_1 {
+            width: 65vh;
+            height:65vh;
+            margin-left:0vh;
+            margin-bottom:-10vh;
+       }
+
+
+       .top-recipe.spad > div:first-child > .image-row > .img_2 {
+       margin-bottom:6vh;
+       }
+
+
+      .todays span {
+        margin-right:24vh;
+      }
+
+      .todays_anchor {
+        margin-left:24vh;
+       }
+
+
+
+      .burger_h4 {
+        margin-left:5vh;
+        }
+
+      .burger_p {
+            margin-left:5vh;
+            margin-right:8vh;
+            margin-bottom:-3vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:30vh;
+            height:30vh;
+            margin-left:-1vh;
+        }
+
+
+      .row1 {
+        margin-left: 9vh;
+        }
+
+
+        .row1 p {
+        margin-left: -14vh;
+        }
+
+       .footer-section .subscribe-form input[type="email"] {
+        margin-left: -4vh;
+         width: 43vh;
+         margin:1vh;
+        }
+
+      .row1 button {
+            width: 43vh;
+            margin-left: -4vh;
+            margin:1vh;
+        }
+
+
+
+        .footer-section .fs-left {
+        margin-left:8vh;
+    }
+
+
+      .footer-section .footer_mail {
+        margin-left:10vh;
+        text-align:right;
+    }
+
+
+
+}
+
+
+
+@media screen and (min-width: 820px) and (max-width: 912px) and (min-height: 1366px) and (max-height: 1368px) {
+
+
+               html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+
+      .header-nav {
+        height:5vh;
+    }
+
+     .page-top-recipe {
+        margin-top:-1vh;
+    }
+
+    .topnav {
+        margin-left:17vh;
+    }
+
+    .pt-recipe-udiv {
+        margin-left:40vh;
+    }
+
+
+
+    .top-recipe.spad > div:first-child  p {
+        width:60vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+        width: 65vh;
+        margin:0vh;
+    }
+
+
+      .top-recipe.spad > div:first-child > .image-row > .img_1 {
+            width: 65vh;
+            height:65vh;
+            margin-left:0vh;
+            margin-bottom:-10vh;
+       }
+
+
+       .top-recipe.spad > div:first-child > .image-row > .img_2 {
+       margin-bottom:6vh;
+       }
+
+
+      .todays span {
+        margin-right:23vh;
+      }
+
+      .todays_anchor {
+        margin-left:23vh;
+       }
+
+
+
+      .burger_h4 {
+        margin-left:5vh;
+        }
+
+      .burger_p {
+            margin-left:5vh;
+            margin-right:8vh;
+            margin-bottom:-3vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:30vh;
+            height:30vh;
+            margin-left:0vh;
+        }
+
+
+      .row1 {
+        margin-left: 6vh;
+        }
+
+
+        .row1 p {
+        margin-left: 0vh;
+        }
+
+       .footer-section .subscribe-form input[type="email"] {
+        margin-left: -4vh;
+         width: 43vh;
+         margin:1vh;
+        }
+
+      .row1 button {
+            width: 43vh;
+            margin-left: -8vh;
+            margin:1vh;
+        }
+
+
+
+        .footer-section .fs-left {
+        margin-left:6vh;
+    }
+
+
+      .footer-section .footer_mail {
+        margin-left:6vh;
+        text-align:right;
+    }
+
+
+
+}
+
+
+
+
+@media screen and (min-width: 430px) and (max-width: 540px) and (min-height: 668px) and (max-height: 720px) {
+
+
+
+    .pt-recipe-udiv {
+        margin-left:70vh;
+    }
+
+
+
+    .top-recipe.spad > div:first-child  p {
+        width:60vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+        width: 65vh;
+        margin:0vh;
+    }
+
+
+      .top-recipe.spad > div:first-child > .image-row > .img_1 {
+            width: 65vh;
+            height:65vh;
+            margin-left:0vh;
+            margin-bottom:-10vh;
+       }
+
+
+       .top-recipe.spad > div:first-child > .image-row > .img_2 {
+       margin-bottom:6vh;
+       }
+
+
+      .todays span {
+        margin-right:16vh;
+      }
+
+      .todays_anchor {
+        margin-left:16vh;
+       }
+
+
+
+      .burger_h4 {
+        margin-left:5vh;
+        }
+
+      .burger_p {
+            margin-left:5vh;
+            margin-right:8vh;
+            margin-bottom:-3vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:30vh;
+            height:30vh;
+            margin-left:0vh;
+        }
+
+
+      .row1 {
+        margin-left: 15vh;
+        }
+
+
+        .row1 p {
+        margin-left: 0vh;
+        }
+
+       .footer-section .subscribe-form input[type="email"] {
+        margin-left: -4vh;
+         width: 43vh;
+         margin:1vh;
+        }
+
+      .row1 button {
+            width: 43vh;
+            margin-left: -8vh;
+            margin:1vh;
+        }
+
+
+
+        .footer-section .fs-left {
+        margin-left:14vh;
+    }
+
+
+      .footer-section .footer_mail {
+        margin-left:3vh;
+        text-align:right;
+    }
+
+}
+
+
+
+@media screen and (max-width: 344px) and (min-height: 845px) and (max-height: 882px) {
+
+
+      .pt-recipe-udiv {
+        margin-left:35vh;
+        margin-right:10vh;
+        width:30vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child  p {
+            width:30vh;
+        }
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+            width: 45vh;
+            margin:0vh;
+        }
+
+
+     .top-recipe.spad > div:first-child > .image-row > .img_1 {
+        width:25vh;
+        height:25vh;
+        margin-left:-7vh;
+        margin-bottom:-10vh;
+       }
+
+        .top-recipe.spad > div:first-child > .image-row > .img_2 {
+       margin-left:-7vh;
+       }
+
+
+
+        .top-recipe-button {
+            margin-top:10vh;
+        }
+
+
+         .todays span {
+        margin-right:3vh;
+        }
+
+        .todays_anchor {
+        margin-left:3vh;
+        }
+
+        .burger_h4 {
+           margin-left:4vh;
+          margin-right:8vh;
+          margin-bottom:-3vh;
+        }
+
+        .burger_p {
+          margin-left:4vh;
+          margin-right:8vh;
+          margin-bottom:-3vh;
+        }
+
+
+         .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:30vh;
+            height:30vh;
+            margin-left:-5vh;
+        }
+
+
+        .img_1 {
+        margin-bottom:-17vh;
+        }
+
+
+
+
+    .row1 {
+        margin-left: 5vh;
+        width:40vh;
+        }
+
+
+        .row1 p {
+        margin-left: 7vh;
+        }
+
+       .footer-section .subscribe-form input[type="email"] {
+        margin-left: -4vh;
+         width: 30vh;
+         margin:1vh;
+        }
+
+      .row1 button {
+            width: 30vh;
+            margin-left: -8vh;
+            margin:1vh;
+        }
+
+
+
+        .footer-section .fs-left {
+        margin-left:5vh;
+    }
+
+
+      .footer-section .footer_mail {
+        margin-left:0vh;
+        text-align:right;
+    }
+
+}
+
+
+@media screen and (min-width: 820px) and (max-width: 853px) and (min-height: 1180px) and (max-height: 1280px) {
+
+
+
+     .topnav {
+        margin-left:15vh;
+    }
+
+
+     .pt-recipe-udiv {
+        margin-left:35vh;
+        margin-right:10vh;
+        width:30vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child  p {
+            width:30vh;
+        }
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+            width: 65vh;
+            margin:0vh;
+        }
+
+
+     .top-recipe.spad > div:first-child > .image-row > .img_1 {
+        width:55vh;
+        height:55vh;
+        margin-left:0vh;
+        margin-bottom:-10vh;
+       }
+
+        .top-recipe.spad > div:first-child > .image-row > .img_2 {
+       margin-left:-7vh;
+       }
+
+
+
+        .top-recipe-button {
+            margin-top:10vh;
+        }
+
+
+         .todays span {
+        margin-right:20vh;
+        }
+
+        .todays_anchor {
+        margin-left:20vh;
+        }
+
+        .burger_h4 {
+           margin-left:6vh;
+          margin-right:8vh;
+          margin-bottom:-1vh;
+        }
+
+           .burger_p {
+            margin-left:-15vh;
+            margin-bottom:-3vh;
+        }
+
+
+         .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:30vh;
+            height:30vh;
+            margin-left:0vh;
+        }
+
+
+        .img_1 {
+        margin-bottom:-17vh;
+        }
+
+
+
+
+    .row1 {
+        margin-left: 8vh;
+        width:40vh;
+        }
+
+
+        .row1 p {
+        margin-left: -10vh;
+        }
+
+       .footer-section .subscribe-form input[type="email"] {
+        margin-left: -4vh;
+         width: 30vh;
+         margin:1vh;
+        }
+
+      .row1 button {
+            width: 30vh;
+            margin-left: -8vh;
+            margin:1vh;
+        }
+
+
+
+        .footer-section .fs-left {
+        margin-left:8vh;
+    }
+
+
+      .footer-section .footer_mail {
+        margin-left:8vh;
+        text-align:right;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width: 412px) and (min-height: 882px) and (max-height: 914px) {
+
+
+        .pt-recipe-udiv {
+        margin-left:40vh;
+        margin-right:10vh;
+        width:40vh;
+    }
+
+
+
+    .top-recipe.spad > div:first-child  p {
+        width:30vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+        width: 50vh;
+        margin:0vh;
+    }
+
+
+      .top-recipe.spad > div:first-child > .image-row > .img_1 {
+            width: 40vh;
+            height:40vh;
+            margin-left:-4vh;
+       }
+
+
+      .todays span {
+        margin-right:6vh;
+      }
+
+      .todays_anchor {
+        margin-left:6vh;
+       }
+
+
+
+      .burger_h4 {
+        margin-left:6vh;
+        }
+
+      .burger_p {
+            margin-left:7vh;
+            margin-right:8vh;
+            margin-bottom:-3vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:30vh;
+            height:30vh;
+            margin-left:-2vh;
+        }
+
+
+      .row1 {
+        margin-left: 9vh;
+        }
+
+
+        .row1 p {
+        margin-left: 5vh;
+        }
+
+       .footer-section .subscribe-form input[type="email"] {
+        margin-left: -4vh;
+        }
+
+      .row1 button {
+            width: 33vh;
+            margin-left: -4vh;
+        }
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+
+
+     html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .header-nav {
+        height:10vh;
+    }
+
+     .page-top-recipe {
+        margin-top:-1vh;
+    }
+
+    .topnav {
+        margin-left:50vh;
+    }
+
+
+
+
+
+    .pt-recipe-udiv {
+        margin-left:60vh;
+    }
+
+
+
+
+ .top-recipe.spad > div:first-child  p {
+        width:90vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+        width: 120vh;
+        margin:0vh;
+    }
+
+
+      .top-recipe.spad > div:first-child > .image-row > .img_1 {
+            width: 90vh;
+            height:90vh;
+            margin-left:-4vh;
+       }
+
+
+       .top-recipe.spad > div:first-child > .image-row > .img_2 {
+
+            margin-top:3vh;
+       }
+
+
+
+      .todays span {
+        margin-right:55vh;
+      }
+
+      .todays_anchor {
+        margin-left:55vh;
+       }
+
+
+
+      .burger_h4 {
+        margin-left:40vh;
+        }
+
+      .burger_p {
+            width:70vh;
+            margin-left:15vh;
+            margin-right:8vh;
+            margin-bottom:-3vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:45vh;
+            height:45vh;
+            margin-left:-2vh;
+        }
+
+
+
+       .row1 {
+        margin-left: 18vh;
+    }
+
+
+
+    .row1 button {
+        width: 40vh;
+        margin-top:2vh;
+    }
+
+
+    .row1 p {
+    margin-left:-12vh;
+    }
+
+    .footer-section .footer_mail {
+        margin-left:18vh;
+        text-align:right;
+    }
+
+
+    .footer-section .subscribe-form input[type="email"] {
+        width: 40vh;
+    }
+
+
+    .footer-section .fs-left {
+        margin-left:17vh;
+    }
+
+
+}
+
+
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) and (min-height: 740px) and (max-height: 800px) {
+
+
+         html, body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow-x: hidden;
+    }
+
+    .header-nav {
+        height:10vh;
+    }
+
+     .page-top-recipe {
+        margin-top:-1vh;
+    }
+
+    .topnav {
+        margin-left:50vh;
+    }
+
+
+
+
+
+    .pt-recipe-udiv {
+        margin-left:60vh;
+    }
+
+
+
+
+ .top-recipe.spad > div:first-child  p {
+        width:90vh;
+    }
+
+
+
+     .top-recipe.spad > div:first-child > .image-row {
+        width: 120vh;
+        margin:0vh;
+    }
+
+
+      .top-recipe.spad > div:first-child > .image-row > .img_1 {
+            width: 90vh;
+            height:90vh;
+            margin-left:-4vh;
+       }
+
+
+       .top-recipe.spad > div:first-child > .image-row > .img_2 {
+
+            margin-top:3vh;
+       }
+
+
+
+      .todays span {
+        margin-right:55vh;
+      }
+
+      .todays_anchor {
+        margin-left:55vh;
+       }
+
+
+
+      .burger_h4 {
+        margin-left:40vh;
+        }
+
+      .burger_p {
+            width:70vh;
+            margin-left:15vh;
+            margin-right:8vh;
+            margin-bottom:-3vh;
+        }
+
+
+
+        .image-row.image-row-burger img {
+            margin-top:3vh;
+            width:45vh;
+            height:45vh;
+            margin-left:-2vh;
+        }
+
+
+
+       .row1 {
+        margin-left: 18vh;
+    }
+
+
+
+    .row1 button {
+        width: 40vh;
+        margin-top:2vh;
+    }
+
+
+    .row1 p {
+    margin-left:-12vh;
+    }
+
+    .footer-section .footer_mail {
+        margin-left:18vh;
+        text-align:right;
+    }
+
+
+    .footer-section .subscribe-form input[type="email"] {
+        width: 40vh;
+    }
+
+
+    .footer-section .fs-left {
+        margin-left:17vh;
+    }
+
+}
+
+
+ .burger_h4 {
+        margin-left:32vh;
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+
+
+    <!-- Header Section Begin -->
+    <header class="header-section">
+
+        <div class="container" align="center">
+
+            <div class="logo">
+                <a href="{% url 'home' %}"><img src="{% static 'sta1/images/logo_home.jpeg' %}" alt=""></a>
+            </div><br>
+    </header>
+    <hr>
+
+
+
+    <!--
+    <header class="header-nav">
+                <div class="nav-container">
+                    <div class="nav-menu">
+                        <nav class="main-menu mobile-menu">
+                            <ul>
+                                <li>
+                                    <a href="{% url 'home' %}">Home</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'home' %}">About</a>
+                                </li>
+
+                                  <li>
+                                    <a href="{% url 'restaurants' %}">Restaurants</a>
+                                </li>
+
+
+                                <li>
+                                    <a href="#">Restaurants <span style="font-size:8px;">▼</span></a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="#">About Me</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Categories</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Recipe</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Blog</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact</a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+
+                                <li>
+                                    <a href="{% url 'reservation' %}">Reservation</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'contact' %}">Contact</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+
+            <div id="mobile-menu-wrap"></div>
+    </header>
+    -->
+    <!-- Header End -->
+
+
+
+
+
+
+
+        <section class="header-nav">
+            <div class="topnav" id="myTopnav">
+              <a href="{% url 'home' %}">Home</a>
+              <a href="{% url 'home' %}">About</a>
+              <a href="{% url 'restaurants' %}">Restaurants</a>
+                <!--
+              <div class="dropdown">
+                <button class="dropbtn">Dropdown
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </div>
+              -->
+              <a href="{% url 'reservation' %}">Reservation</a>
+              <a href="{% url 'contact' %}">Contact</a>
+              <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+       </section>
+
+
+
+
+
+
+
+    <!-- Page Top Recipe Section Begin -->
+    <section class="page-top-recipe">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="overlay-content">
+
+                    <div class="pt-recipe-item large-item">
+
+
+
+
+                            <div class="pt-recipe-udiv">
+                                <h3>EVERY DISH IS A<br> CHAPTER. AND EVERY <br>CONCEPT UNFOLDS A NEW <br>CULINARY ADVENTURE.</h3><br>
+                                <h6>Every dish is a chapter. And every concept unfolds a new <br>culinary adventure. Every dish is a chapter.</h6><br>
+                                <button onclick="location.href='{% url 'reservation' %}'">For Reservations</button>
+                            </div>
+
+
+
+                    </div>
+
+                </div>
+
+
+                </div>
+            </div>
+    </section>
+    <!-- Page Top Recipe Section End -->
+
+
+
+
+    <!-- Top Recipe Section Begin --><br><br><br>
+    <section class="top-recipe spad">
+        <div align="center">
+            <hr class="top_rec_spad_hr">
+            <h6>RESTAURANTS</h6>
+            <hr><br>
+            <h4>LOCAL BRANDS</h4><br>
+            <p>Every dish is a chapter. And every concept unfolds a new <br>culinary adventure. Every dish is a chapter.</p>
+
+            <div class="image-row">
+            <img class="img_1" src="{% static 'sta1/images/single_product.jpeg' %}">
+            <img class="img_2" src="{% static 'sta1/images/local_brand2.jpeg' %}">
+            </div>
+
+            <div class="todays">
+                <span>RESTAURANTS/LOCAL BRANDS</span>
+                <a class="todays_anchor" href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+            </div>
+
+
+
+               <div class="hr-container">
+                    <button class="round-button"></button>
+                    <span class="custom-hr"></span>
+                    <button class="round-button"></button>
+                </div>
+
+
+
+            <br><br>
+            <h4 class="burger_h4" align="left">BURGER INN</h4><br>
+            <p class="burger_p" align="left">Burger Inn is a restaurant located in Kuwait,
+                serving a selection of Burgers, Beverages, Fast Food that delivers across Al-Qusour,
+                Ardhiya, Bayan, Maidan Hawally and Sabahiya. Our bestselling dishes are Burger Inn Chicken
+                Fillet, Fries, Messy Fries and Chicky Fries, with a variety of other dishes and meals to
+                choose from like Burgers, Beverages, and Fast Food.</p>
+
+
+             <div class="hr-container">
+                    <button class="round-button"></button>
+                    <span class="custom-hr"></span>
+                    <button class="round-button"></button>
+                </div>
+
+
+            <br>
+
+              <div class="image-row image-row-burger">
+                <img src="{% static 'sta1/images/single_product1.png' %}">
+                <img src="{% static 'sta1/images/single_product2.png' %}">
+                <img src="{% static 'sta1/images/single_product3.png' %}">
+            </div>
+
+        </span>
+
+    </section>
+    <!-- Top Recipe Section End -->
+
+
+
+
+
+
+    <!-- Categories Filter Section Begin -->
+
+    <!-- Categories Filter Section End -->
+
+
+
+
+
+
+    <!-- Feature Recipe Section Begin -->
+    <!-- Feature Recipe Section End -->
+
+
+
+
+
+
+
+    <!-- Footer Section Begin -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="fs-left">
+
+                        <p><hr><small>CONTACT</small><hr><br><br>
+                        AL-SHARQIA TOWER<br>
+                        FLOOR 7<br>
+                        JABER AL MUBARAK<br>
+                        STREET, BLOCK 2<br>
+                        KUWAIT CITY</p>
+                    </div>
+                </div>
+
+
+                <div>
+
+                    <div class="row1">
+
+                    <form action="#" class="subscribe-form">
+                        <p>Join our mailing list for updates.<br>Get news & other events</p>
+                        <input type="email" placeholder="Email">
+                        <button type="submit">Subscribe</button>
+                    </form>
+
+                    </div>
+
+                </div>
+
+
+
+
+
+                    <div class="footer_mail">
+                        <p>2226045<br>
+                        INFO@AGTHIA-FOOD.COM</p>
+                    </div>
+
+
+
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="copyright-text" align="center">
+
+© Copyright
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <!-- Search model -->
+	<div class="search-model">
+		<div class="h-100 d-flex align-items-center justify-content-center">
+			<div class="search-close-switch">+</div>
+			<form class="search-model-form">
+				<input type="text" id="search-input" placeholder="Search here.....">
+			</form>
+		</div>
+	</div>
+	<!-- Search model end -->
+
+
+
+    <!-- Js Plugins -->
+    <script src="{% static 'sta/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'sta/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'sta/js/jquery.slicknav.js' %}"></script>
+    <script src="{% static 'sta/js/jquery.nice-select.min.js' %}"></script>
+    <script src="{% static 'sta/js/mixitup.min.js' %}"></script>
+    <script src="{% static 'sta/js/main.js' %}"></script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var menuItems = document.querySelectorAll(".main-menu > ul > li");
+
+    menuItems.forEach(function(item) {
+        item.addEventListener("click", function(event) {
+            var submenu = this.querySelector(".sub-menu");
+            if (submenu.style.display === "block") {
+                submenu.style.display = "none";
+            } else {
+                submenu.style.display = "block";
+            }
+            event.stopPropagation();
+        });
+    });
+
+    // Close the submenu if clicked outside
+    document.addEventListener("click", function(event) {
+        var submenus = document.querySelectorAll(".sub-menu");
+        submenus.forEach(function(submenu) {
+            if (submenu.style.display === "block" && !submenu.parentNode.contains(event.target)) {
+                submenu.style.display = "none";
+            }
+        });
+    });
+});
+
+</script>
+
+
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  var pageTopRecipe = document.querySelector(".page-top-recipe");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    pageTopRecipe.classList.add("margin-top-500");
+  } else {
+    x.className = "topnav";
+    pageTopRecipe.classList.remove("margin-top-500");
+  }
+}
+</script>
+
+
+
+</body>
+
+</html>
